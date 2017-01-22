@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ProduktiApp</string>
+    <string name="text_tab_header">Навигатор </string>
+    <string name="digit_keyboard_font_georgia">fonts/georgia.ttf</string>
+    <string name="digit_keyboard_font_georgia_italic">fonts/georgiaitalic.ttf</string>
+    <string name="digit_keyboard_times_new_roman">fonts/Timesnewroman.ttf</string>
+    <string name="digit_keyboard_font_tatiana">fonts/TatianaCTTNormal.ttf</string>
+    <string name="digit_keyboard_font_taigir">fonts/TagirCTTNormal.ttf</string>
+    <string name="tab_name_category">Категории</string>
+    <string name="tab_name_my_office">Мой кабинет</string>
+</resources>

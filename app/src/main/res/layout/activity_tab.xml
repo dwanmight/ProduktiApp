@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools=" http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/PrimaryDarkColor"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="@string/text_tab_header"
+            app:titleTextColor="@color/colorWhite"/>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/PrimaryColor"
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/colorWhite"
+            app:tabTextColor="@color/colorGrey"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1">
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/bg_category"
+        />
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="net.voidynullness.android.tabitytabs.TabLayoutActivity">
+
+        </android.support.v4.view.ViewPager>
+    </FrameLayout>
+    <include layout="@layout/in_menu_bar"/>
+</LinearLayout>

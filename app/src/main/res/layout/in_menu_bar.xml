@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:id="@+id/digit_keyboard_layout"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/PrimaryDarkColor"
+        android:orientation="horizontal"
+        android:paddingTop="6dp"
+        android:weightSum="100">
+        <ImageView
+            style="@style/menu_bar_style"
+            android:src="@drawable/ic_menu_search_24dp"/>
+        <ImageView
+            style="@style/menu_bar_style"
+            android:src="@drawable/ic_menu_cursor_24"/>
+
+        <ImageView
+            style="@style/menu_bar_style"
+            android:src="@drawable/ic_menu_history_24dp"/>
+        <ImageView
+            style="@style/menu_bar_style"
+            android:src="@drawable/ic_menu_bar_24dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/PrimaryDarkColor"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:weightSum="100">
+        <TextView
+            style="@style/menu_bar_style_tv"
+            android:src="@drawable/ic_menu_search_24dp"
+            android:text="Поиск"/>
+        <TextView
+            style="@style/menu_bar_style_tv"
+            android:src="@drawable/ic_menu_cursor_24"
+            android:text="Карта"/>
+        <TextView
+            style="@style/menu_bar_style_tv"
+            android:src="@drawable/ic_menu_history_24dp"
+            android:text="История"/>
+        <TextView
+            style="@style/menu_bar_style_tv"
+            android:src="@drawable/ic_menu_bar_24dp"
+            android:text="Меню"/>
+    </LinearLayout>
+</LinearLayout>
